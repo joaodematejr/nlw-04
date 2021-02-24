@@ -11,3 +11,9 @@ mix credo gen.config
 mix ecto.create
 
 mix phx.server 
+
+mix ecto.create
+
+mix ecto.gen.migration create_user_table
+
+mix ecto.migrate
