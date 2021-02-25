@@ -13,10 +13,10 @@ config :rocketpay,
 # Configures the endpoint
 config :rocketpay, RocketpayWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "ENhq/7PlOB+sKuExQxaQ5g2CuXktdXk/2mBahHyDpIgjXA09ckUFAePcPsrIfKrV",
+  secret_key_base: "97o86x3w0w8Rpi+VtGBwjUVkz5isaYNJLlJSkqa2TpFoB00iWTXExIehfqAvqsA8",
   render_errors: [view: RocketpayWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: Rocketpay.PubSub,
-  live_view: [signing_salt: "69uYP+CM"]
+  live_view: [signing_salt: "aorOYJQv"]
 
 config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],

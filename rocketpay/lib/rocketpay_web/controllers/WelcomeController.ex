@@ -10,15 +10,14 @@ defmodule RocketpayWeb.WelcomeController do
   end
 
   defp handle_response({:ok, %{result: result}}, conn) do
-    conn
-    |> put_status(:ok)
-    # |> IO.inspect()
-    |> json(%{message: "Welcome to the Rocketpay API. Here is your number: #{result}"})
+  conn
+  |> put_status(:ok)
+  |> json(%{message: "Welcome to Rocketpay API. Here is your number #{result}"})
   end
 
   defp handle_response({:error, reason}, conn) do
-    conn
-    |> put_status(:bad_request)
-    |> json(reason)
+  conn
+  |> put_status(:bad_request)
+  |> json(reason)
   end
 end
